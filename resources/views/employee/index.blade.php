@@ -20,12 +20,14 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header border-bottom">
+                        <a href="{{route('employee.create')}}" class="btn btn-primary waves-effect waves-float waves-light float-right">Add Employee</a>
+
                     </div>
                     <div class="card-datatable">
                         <table class="dt-responsive table" id="emp-table">
                             <thead>
                             <tr>
-                                <th>SR No.</th>
+{{--                                <th>SR No.</th>--}}
                                 <th>Employee No.</th>
                                 <th>Name</th>
                                 <th>Address</th>

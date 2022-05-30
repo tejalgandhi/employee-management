@@ -20,11 +20,11 @@ Route::get('/', function () {
 
 //employee route
 Route::prefix('employee')->group(function () {
-    Route::get('/',[EmployeeController::class, 'index'])->name('employees.index');
+    Route::get('/',[EmployeeController::class, 'index'])->name('employee.index');
     Route::post('employeeAjax', [EmployeeController::class,'employeeAjax'])->name('ajax.employee');
-    Route::get('create',[EmployeeController::class, 'create'])->name('employees.create');
-    Route::get('{id}/edit', [EmployeeController::class,'edit'])->name('employees.edit');
-    Route::post('store',[EmployeeController::class, 'store'])->name('employees.store');
-    Route::post('{id}/update', [EmployeeController::class,'update'])->name('employees.update');
-    Route::delete('{id}/delete', [EmployeeController::class,'destroy'])->name('employees.destroy');
+    Route::get('create',[EmployeeController::class, 'create'])->name('employee.create');
+    Route::get('{id}/edit', [EmployeeController::class,'edit'])->name('employee.edit');
+    Route::post('store',[EmployeeController::class, 'store'])->name('employee.store');
+    Route::post('{id}/update', [EmployeeController::class,'update'])->name('employee.update');
+    Route::delete('{id}/delete', [EmployeeController::class,'destroy'])->name('employee.destroy');
 });
